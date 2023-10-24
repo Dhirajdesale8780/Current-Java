@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .data{
+        position: relative;
+    top: -15px;
+    right: 49px;
+    height: 575px;
+    margin: 14px;
+    width: 451px
+
+    }
+    .bata{
+        text-align: center;
+        position: relative;
+       
+    top: -15px;
+    right: 62px;
+    height: 575px;
+    margin: 2px;
+    width: 588px;
+
+    }
+    h1{
+        position: relative;
+    top: 188px;
+    }
+    .user{
+        position: relative;
+    width: 438px;
+    top: 190px;
+    right: -82px;
+    height: 315px;
+
+    }
+    .name{
+        height: 32px;
+    width: 209px;
+    }
+    .but{
+        cursor: pointer;
+        border: 1px solid rgb(4, 142, 20) ;
+    background-color: rgb(4, 142, 20);
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    width: 438px
+     }
+     p{
+        position: absolute;
+    top: 23%;
+    right: -2%;
+    width: 448px;
+
+     }
+</style>
+<body>
+    <section>
+        <div class="data">
+            <img src="https://images.unsplash.com/photo-1592903204858-e288251ad9cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwd2Fsa2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" style="height: 575px;
+            width: 451px;">
+        </div>
+        <div class="bata"><h1>ACCOUNT LOGIN</h1>
+            <div class="user">
+               <input type="name" class="name" placeholder="Username">
+               <input type="password" class="name" placeholder="Password">
+               <button type="submit" class="but" style="color: aliceblue;" onclick="sign()">SIGN IN</button>
+               <p>Forgot <a href="" style="color: rgb(4, 142, 20);">Username/password</a></p>
+               <a href="" style="color: rgb(4, 142, 20); position: absolute;    top: 291px;
+               right: 173px;" >SIGN UP</a>
+            </div>
+           
+        </div>
+    </section>
+    <script>
+        function sign(){
+        var Username = document.getElementsByTagName("input")[0].value
+        var Password = document.getElementsByTagName("input")[1].value
+        console.log(Username)
+        console.log(Password)
+        alert('Succefully Login')
+        }
+    </script>
+</body>
+</html>

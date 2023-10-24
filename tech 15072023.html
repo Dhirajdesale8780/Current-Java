@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="tech 1507.css"
+</head>
+<style>
+    body {
+height: 100vh;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Roboto",sans-serif;
+font-size: 1.05rem;
+}
+h1 {
+font-size: 2.5rem;
+font-weight: normal;
+margin: 10px;
+}
+input {
+border-radius: 5px;
+border: solid 1px black;
+margin-bottom: 10px;
+height: 30px;
+}
+input:hover,
+input:focus {
+    cursor: pointer;
+    outline: 1px solid violet; 
+}
+label {
+font-size: 20px;
+margin: 10px;
+}
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px lightcyan;
+    background-color: violet;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    padding-inline: 20px;
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+button:hover {
+    background-color: violet;
+}
+button:focus,
+button:active {
+    outline: solid 1px violet;
+    background-color: azure;
+
+}
+.form-card {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: red;
+    width: 600px;
+    height: 500px;
+   
+
+
+}
+img{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+}
+</style>
+<body>
+    <div class="form-card">
+        <h1>Sign In</h1>
+        <label for="">Name</label>
+        <input type="text"/>
+        <label for="">Contact</label>
+        <input type="number"/>
+        <label for="">Email</label>
+        <input type="text"/>
+        <label for="">Password</label>
+        <input type="password"/>
+        <label for="">Image</label>
+        <input type="image">
+        <img src="" alt="">
+        
+        <button type="submit">Login</button>
+        <p>Not Registered yet? <a href="#">SignUp!</a></p>
+    </div>
+    <div class="form-card">
+       <img src="" alt="">
+       <p>Name:Dhiraj</p>
+       <p>Contact:9689848801</p>
+       <p>Email:dhiraj@gmail.com</p>
+    </div>
+</body>
+</html>

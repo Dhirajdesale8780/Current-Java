@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        display: flex;
+    justify-content: center;
+    height: 550px;
+    background-image: url("https://images.unsplash.com/photo-1644065049250-91c3ebb831c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-size: 100% 100%;
+   
+}
+    div{
+        align-items: center;
+       
+    position: relative;
+    top: 89px;
+    height: 360px;
+    width: 375px;
+    background-color: white;
+    }
+    .sec2{
+        position: relative;
+    top: 7px;
+    height: 332px;
+    width: 353px;
+    right: -10px;
+
+    }
+    .name{
+        border: 1px solid white;
+        margin: 6px;
+    height: 27px;
+    width: 349px;
+
+    }
+    .but{
+        cursor: pointer;
+    border: 1px solid orange;
+    border-radius: 8px;
+    background-color: orange;
+    font-size: 21px;
+    position: absolute;
+    top: 71%;
+    right: 41%;
+
+     }
+</style>
+<body>
+    <section>
+        <div>
+            <img src="https://images.unsplash.com/photo-1611042553484-d61f84d22784?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1vZGVsJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" style="height: 360px;
+            width: 375px;">
+        </div>
+        <div>
+            <div class="sec2">
+            <h1 style="text-align: center;">Register Form</h1>
+            <input type="name" class="name" placeholder="Your Name"> 
+            <input type="name" class="name" placeholder="Email Address"> 
+            <input type="password" class="name" placeholder="Password"> 
+            <input type="password" class="name" placeholder="Confirm Password">
+            <button type="submit" class="but" style="color: aliceblue;" onclick="show()">Register</button>
+        </div>
+        </div>
+    </section>
+    <script>
+    function show(){
+        var name = document.getElementsByClassName("name")[0].value
+        var email = document.getElementsByClassName("name")[1].value
+        var pass = document.getElementsByClassName("name")[2].value
+        var cpass = document.getElementsByClassName("name")[3].value
+        console.log(name);
+        console.log(email);
+        console.log(pass);
+        console.log(cpass);
+        
+
+    }
+</script>
+</body>
+</html>

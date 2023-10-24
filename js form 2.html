@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+       display: flex;
+       
+       align-items: center;
+       height: 585px;
+       border: 2px solid blueviolet;
+   }
+   div{
+       
+       text-align: center;
+       height: 583px; 
+       width: 570px;
+       border: 1px solid red;
+   }
+   input{
+       margin: 5px;
+       
+      border: 1px solid black;
+      height: 30px;
+      width: 300px;
+   }
+   .but{
+       cursor: pointer;
+   border-radius: 5px;
+   border: solid 1px black;
+   background-color: yellow;
+   font-size: 20px;
+   width: 300px;
+   
+   
+
+    }
+    img{
+       border: 1px solid black;
+       height: 181px;
+       width: 230px;
+    }
+</style>
+<body>
+   <section>
+       <div class="box"> <h2 style="text-align: center; color: black" >Sign Up</h2>
+           <input type="Name" placeholder="Name" class="Name" > <br>
+          <input type="number" placeholder="Contact" class="Name"> <br>
+          <input type="email" placeholder="Email" class="Name"> <br>
+          <button type="submit" class="but" onclick="show()">submit</button>
+</div>
+       <div>
+           
+        <p></p>
+        <p></p>
+        <p></p>
+       </div>
+      
+   </section>
+   <script>
+    function show(){
+        // var name = document.getElementsByClassName("Name")[0].value
+        // document.getElementsByTagName('p')[0].innerHTML = name
+
+        // var number = document.getElementsByClassName("Name")[1].value
+        // document.getElementsByTagName('p')[1].innerHTML = number
+
+        // var email = document.getElementsByClassName("Name")[2].value
+        // document.getElementsByTagName('p')[2].innerHTML = email
+
+        var name = document.getElementsByClassName("Name")[0].value
+        var number = document.getElementsByClassName("Name")[1].value
+        var email = document.getElementsByClassName("Name")[2].value
+
+        var txtName= document.createTextNode(name)
+        var txtContact= document.createTextNode(number)
+        var txtemail= document.createTextNode(email)
+
+        var recname=document.getElementsByTagName("p")[0]
+        var recno=document.getElementsByTagName("p")[1]
+        var recmail=document.getElementsByTagName("p")[2]
+
+        recname.appendChild(txtName)
+        recno.appendChild(txtContact)
+        recmail.appendChild(txtemail)
+    
+}
+
+   </script>
+   
+
+
+    
+</body>
+</html>

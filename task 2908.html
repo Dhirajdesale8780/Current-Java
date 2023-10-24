@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 585px;
+        border: 2px solid blueviolet;
+    }
+    div{
+        
+        text-align: center;
+    height: 584px;
+    width: 837px;
+    border: 1px solid red;
+    margin: 3px;
+}
+.inp{
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg");
+}
+input{
+    margin: 3px;
+    width: 280px;
+}
+.but{
+        cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: yellow;
+    font-size: 20px;
+    margin: 4px;
+     }
+     select{
+        width: 280px;
+     }
+     table{
+    width: 25%;
+    border: 2px solid ;
+    height: 38px;
+    text-align: center;
+     }
+     tr{
+    width: 25%;
+    border: 2px solid ;
+    height: 38px;
+    text-align: center;
+     }
+     th{
+    width: 25%;
+    border: 2px solid ;
+    height: 38px;
+    text-align: center;
+     }
+     td{
+    width: 25%;
+    border: 2px solid ;
+    height: 38px;
+    text-align: center;
+     }
+</style>
+<body>
+    <section>
+        <div class="inp">
+            <input type="text" placeholder="Name"  class="Name"> <br>
+            <input type="email" placeholder="Email"  class="Name"> <br>
+            <input type="number" placeholder="Contact"  class="Name"> <br>
+            <input type="text" placeholder="Address"  class="Name"> <br>
+            <input type="text" placeholder="Education"  class="Name"> <br>
+            <select name="Course" id="" >
+                <option value="BBA" class="Name">BBA</option>
+                <option value="BCA" class="Name">BCA</option>
+                <option value="MCA" class="Name">MCA</option>
+            </select> <br>
+            <button type="submit" class="but" onclick="show()">submit</button>
+        </div>
+        <div>
+            <table style="border: 1px solid black;">
+                
+                <tr style="border: 1px solid black;">
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>CONTACT</th>
+                    <th>ADDRESS</th>
+                    <th>Education</th>
+                    <th>Course</th>
+        
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+        
+                </tr>
+               </table>
+        </div>
+        
+    </section>
+    <script>
+        function show(){
+        var name = document.getElementsByClassName("Name")[0].value
+        document.getElementsByTagName('td')[0].innerHTML = name
+        var email = document.getElementsByClassName("Name")[1].value
+        document.getElementsByTagName('td')[1].innerHTML = email
+        var contact = document.getElementsByClassName("Name")[2].value
+        document.getElementsByTagName('td')[2].innerHTML = contact
+        var add = document.getElementsByClassName("Name")[3].value
+        document.getElementsByTagName('td')[3].innerHTML = add
+        var edu = document.getElementsByClassName("Name")[4].value
+        document.getElementsByTagName('td')[4].innerHTML = edu
+        var cour = document.getElementsByTagName("select")[0].value
+        var cour = document.getElementsByTagName("select")[1].value
+        var cour = document.getElementsByTagName("select")[2].value
+         document.getElementsByTagName('td')[5].innerHTML = cour
+       
+       
+        
+
+
+        console.log(name);
+        console.log(email);
+        console.log(contact);
+        console.log(add);
+        console.log(edu);
+        console.log(cour);
+        
+        
+
+        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     section{
+        display: flex;
+        
+        align-items: center;
+        height: 585px;
+        border: 2px solid blueviolet;
+    }
+    div{
+        
+        text-align: center;
+        height: 583px; 
+        width: 570px;
+        border: 1px solid red;
+    }
+    input{
+        margin: 5px;
+        
+       border: 1px solid black;
+       height: 30px;
+       width: 300px;
+    }
+    .but{
+        cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: yellow;
+    font-size: 20px;
+    width: 300px;
+    
+    
+
+     }
+     img{
+        border: 1px solid black;
+        height: 181px;
+        width: 230px;
+     }
+</style>
+<body>
+    <section>
+        <div> <h2 style="text-align: center; color: black" >Sign Up</h2>
+            <input type="Name" placeholder="Name" class="Name" > <br>
+           <input type="Name" placeholder="Username" class="Name" > <br>
+           <input type="email" placeholder="Email" class="Name"> <br>
+           <input type="password" placeholder="Password" class="Name"> <br>
+           <input type="password" placeholder="Confirm Password" class="Name"> <br>
+           <input type="text"  placeholder="Image url" class="Name">
+           <button type="submit" class="but" onclick="show()">Sign Up</button>
+</div>
+        <div><p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            
+            <img src="" alt="">
+        </div>
+       
+    </section>
+    <script>
+        function show(){
+        var name = document.getElementsByClassName("Name")[0].value
+        document.getElementsByTagName('p')[0].innerHTML = name
+        var Username = document.getElementsByClassName("Name")[1].value
+        document.getElementsByTagName('p')[1].innerHTML = Username
+        var email = document.getElementsByClassName("Name")[2].value
+        document.getElementsByTagName('p')[2].innerHTML = email
+        var pass = document.getElementsByClassName("Name")[3].value
+        document.getElementsByTagName('p')[3].innerHTML = pass
+        var conpass = document.getElementsByClassName("Name")[4].value
+        document.getElementsByTagName('p')[4].innerHTML = conpass
+        var url = document.getElementsByClassName("Name")[5].value
+        document.getElementsByTagName('img')[0].src = url
+
+
+        console.log(name);
+        console.log(Username);
+        console.log(email);
+        console.log(passs);
+        console.log(conpass);
+        console.log(image);
+        
+
+        
+        }
+    </script>
+</body>
+</html>

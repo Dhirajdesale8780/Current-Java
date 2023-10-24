@@ -1,0 +1,70 @@
+body {
+height: 100vh;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Roboto",sans-serif;
+font-size: 1.05rem;
+}
+h1 {
+font-size: 2.5rem;
+font-weight: normal;
+margin: 10px;
+}
+input {
+border-radius: 5px;
+border: solid 1px black;
+margin-bottom: 10px;
+height: 30px;
+}
+input:hover,
+input:focus {
+    cursor: pointer;
+    outline: 1px solid violet; 
+}
+label {
+font-size: 20px;
+margin: 10px;
+}
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px lightcyan;
+    background-color: violet;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    padding-inline: 20px;
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+button:hover {
+    background-color: violet;
+}
+button:focus,
+button:active {
+    outline: solid 1px violet;
+    background-color: azure;
+
+}
+.form-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: red;
+    width: 600px;
+    height: 500px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(red, green, blue, alpha),
+    6.7px  6.7px 5.3px rgba(red, green, blue, alpha),
+    12.5px 12.5px 10px rgba(red, green, blue, alpha),
+    22.3px 22.3px 17.9px rgba(red, green, blue, alpha),
+    41.8px 41.3px 33.4px rgba(red, green, blue, alpha),
+    100px 100px 80px rgba(red, green, blue, alpha);
+
+
+}

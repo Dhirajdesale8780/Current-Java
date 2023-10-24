@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 585px;
+        border: 2px solid blueviolet;
+    }
+    div{
+        
+        text-align: center;
+        height: 450px; 
+        width: 385px;
+        border: 1px solid red;
+        background-color: black;
+        
+    }
+    input{
+        margin: 5px;
+        
+       border: 1px solid white;
+       height: 30px;
+       width: 300px;
+    }
+    .name{
+        margin: 2px;
+        text
+      
+    }
+    .but{
+        cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: yellow;
+    font-size: 20px;
+    width: 300px;
+    
+    
+
+     }
+</style>
+</style>
+    
+<body>
+    <section>
+        <div>
+            <h2 style="text-align: center; color: aliceblue;" >Sign Up</h2>
+            <input type="Name" placeholder="Name" class="Name" > <br>
+           <input type="Name" placeholder="Username" class="Name" > <br>
+           <input type="email" placeholder="Email" class="Name"> <br>
+           <input type="password" placeholder="Password" class="Name"> <br>
+           <input type="password" placeholder="Confirm Password" class="Name"> <br>
+           <button type="submit" class="but" onclick="show()">Sign Up</button>
+
+        </div>
+       
+    </section>
+    <script>
+        function show(){
+        var name = document.getElementsByClassName("Name")[0].value
+        var Username = document.getElementsByClassName("Name")[1].value
+        var email = document.getElementsByClassName("Name")[2].value
+        var pass = document.getElementsByClassName("Name")[3].value
+        var conpass = document.getElementsByClassName("Name")[4].value
+        console.log(name,Username,email,pass,conpass);
+        }
+       
+    </script>
+</body>
+</html>

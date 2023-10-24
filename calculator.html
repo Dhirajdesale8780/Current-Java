@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        margin-top: 30px;
+       
+    border: 8px solid black;
+    width: 170px;
+    border-radius: 24px;
+    align-items: center;
+    background-color: darkblue;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+
+        margin: 2px;
+        list-style: none;
+        
+        
+    }
+    li:hover{
+        color: black;
+    }
+    button{
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 27px;
+        
+    }
+     button:hover{
+        color: red;
+     }
+    
+    #dis{
+        height: 30px;
+    width: 152px;
+    margin: 4px;
+    }
+</style>
+<body>
+    <section>
+        <div>
+            <input type="text" name="" id="dis">
+        </div>
+    <div>
+        <ul>
+            <li><button onclick="call(this.innerText)">7</button></li>
+            <li><button  onclick="call(this.innerText)">8</button></li>
+            <li><button  onclick="call(this.innerText)">9</button></li>
+            <li><button  onclick="call(this.innerText)">-</button></li>
+
+        </ul>
+        <ul>
+            <li><button  onclick="call(this.innerText)">4</button></li>
+            <li><button  onclick="call(this.innerText)">5</button></li>
+            <li><button  onclick="call(this.innerText)">6</button></li>
+            <li><button  onclick="call(this.innerText)">+</button></li>
+
+        </ul>
+        <ul>
+            <li><button  onclick="call(this.innerText)">1</button></li>
+            <li><button  onclick="call(this.innerText)">2</button></li>
+            <li><button  onclick="call(this.innerText)">3</button></li>
+            <li><button  onclick="call(this.innerText)">/</button></li>
+
+        </ul>
+        <ul>
+            <li><button  onclick="call(this.innerText)" style="color: brown;">0</button></li>
+            <li><button  onclick="call(this.innerText)">.</button></li>
+            <li><button  onclick="call(this.innerText)">*</button></li>
+            <li><button onclick="add()">=</button></li>
+
+        </ul>
+    </div>
+    </section>
+    <script>
+        function call(data){
+            document.getElementsByTagName("input")[0].value +=data
+        }
+
+        function add(){
+            var name =
+            document.getElementsByTagName("input")[0].value 
+            document.getElementsByTagName("input")[0].value= eval(name)
+
+
+
+            
+        }
+
+    </script>
+</body>
+</html>
